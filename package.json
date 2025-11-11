@@ -4,11 +4,10 @@
   "version": "1.0.0",
   "description": "WhatsApp Bot for X-KIRA Pro user verification",
   "scripts": {
-    "start": "node bot.js",
-    "dev": "node --watch bot.js"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "start": "pm2 start index.js --name my-bot --time && pm2 logs my-bot",
+    "restart": "pm2 restart my-bot",
+    "stop": "pm2 stop my-bot",
+    "delete": "pm2 delete my-bot"
   },
   "dependencies": {
     "@hapi/boom": "^10.0.1",
@@ -16,6 +15,7 @@
     "express": "^5.1.0",
     "firebase": "^12.5.0",
     "fs": "^0.0.1-security",
-    "pino": "^10.1.0"
+    "pino": "^10.1.0",
+    "pm2": "^6.0.13"
   }
 }
