@@ -1,0 +1,21 @@
+{
+  "name": "x-kira-whatsapp-bot",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "WhatsApp Bot for X-KIRA Pro user verification",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node --watch bot.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.21",
+    "express": "^5.1.0",
+    "firebase": "^12.5.0",
+    "fs": "^0.0.1-security",
+    "pino": "^10.1.0"
+  }
+}
